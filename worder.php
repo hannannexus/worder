@@ -11,6 +11,15 @@
  */
  
  
- $orders = new WC_Order();
- 
- var_dump($ooders);
+
+
+
+    global $woocommerce, $post;
+
+    $order = new WC_Order($post->ID);
+    $order_mail = $order->get_billing_email();
+
+
+
+
+   
